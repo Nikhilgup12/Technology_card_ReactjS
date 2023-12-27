@@ -44,11 +44,11 @@ const App = () => (
       in this project, let's build Technology Cards by applying the concepts we
       have learned till now. Run the below command in your IDE to submit the
     </p>
-    <div className="card-container">
+    <ul className="card-container">
       {cardsList.map(eachitem => (
-        <CardItem carditem={eachitem} />
+        <CardItem carditem={eachitem} key={eachitem.id} />
       ))}
-    </div>
+    </ul>
   </div>
 )
 
